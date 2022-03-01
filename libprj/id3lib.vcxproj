@@ -123,6 +123,9 @@
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
     <Lib />
+    <PreBuildEvent>
+      <Command>copy ..\config.h.win32 ..\config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
